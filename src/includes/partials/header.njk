@@ -7,7 +7,18 @@
                 </a>
             </div>
         </div>
-        <div id="header--right">{% include "partials/nav.njk" %}</div>
+        <div id="header--right">{% include "partials/nav.njk" %}</div><div id="search"></div>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '0ASMBG7U8C',
+        apiKey: 'b723fe3aea98097e9c3144c3d06afba7',
+        siteId: 'ae5ee0a7-e4de-4a03-8f00-cd4fcf38a147',
+        branch: 'main',
+        selector: 'div#search',
+      });
+    </script>
 </header>  
      

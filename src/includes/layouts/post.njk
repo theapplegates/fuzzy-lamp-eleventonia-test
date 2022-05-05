@@ -12,7 +12,7 @@ layout: base
     <div class="tags--container">
         {% for tag in tags %} 
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-            <div class="tag">
+            <i class="fa-solid fa-tag"></i><div class="tag">
                 <a href="{{ tagUrl | url }}">{{ tag }}</a>
             </div>
             {% endfor %}
