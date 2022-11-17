@@ -1,4 +1,5 @@
 # Eleventonia
+# keeping things current
 
 A mildly opinionated [Eleventy](https://11ty.dev) starter project.
 
